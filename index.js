@@ -4,6 +4,9 @@ var selfClosingTags = require('self-closing-tags')
 var uppercaseLetter = /[A-Z]/g
 var dashReplacer = '-$&'
 var textTypes = ['string', 'number', 'boolean']
+var attributeRenameMap = {
+  classname: 'class'
+}
 
 function stringifyStyle(style) {
   var keys = Object.keys(style)
@@ -38,6 +41,7 @@ function hyperappToHtml(vnode) {
   var childrenLen
   var i = 0
   var attrKey
+  var attrRename
   var attrVal
   var attrs = ''
   var childHTML = ''
@@ -64,6 +68,12 @@ function hyperappToHtml(vnode) {
 
     if (textTypes.indexOf(typeof attrVal) === -1) {
       continue
+    }
+
+    attrRename = attributeRenameMap[attrKey.toLowerCase()]
+
+    if (attrRename !== undefined) {
+      attrKey = attrRename
     }
 
     attrVal = attrVal.toString()
