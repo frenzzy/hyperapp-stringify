@@ -1,6 +1,6 @@
 {
   "name": "hyperapp-to-html",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "convert the hyperapp virtual dom structure into an html string",
   "author": "Tony Crowe <npm@tonycrowe.com> (http://tonycrowe.com/)",
   "license": "UNLICENSED",
