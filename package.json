@@ -1,6 +1,6 @@
 {
   "name": "hyperapp-to-html",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "convert the hyperapp virtual dom structure into an html string",
   "author": "Tony Crowe <npm@tonycrowe.com> (http://tonycrowe.com/)",
   "license": "UNLICENSED",
@@ -13,7 +13,9 @@
   "bugs": {
     "url": "https://github.com/tcrowe/hyperapp-to-html/issues"
   },
-  "keywords": ["hyperapp"],
+  "keywords": [
+    "hyperapp"
+  ],
   "dependencies": {
     "self-closing-tags": "^1.0.0"
   },
