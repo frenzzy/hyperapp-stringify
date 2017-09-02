@@ -3,6 +3,18 @@
 
 Convert that object created with hyperapp `h` into an HTML string.
 
+```js
+var hyperappStringify = require('hyperapp-stringify')
+var h = require('hyperapp').h
+let vnode = h('div', {style: {display: 'inline-block', border: '1px solid red'}}, 'hi')
+hyperappStringify(vnode)
+```
+
+Output
+```html
+'<div style="display:inline-block;border:1px solid red;">hi</div>'
+```
+
 Example from `./test.js` uses `h` function but you can use JSX in yours.
 
 It has a regex for CSS style vendor prefixes.
