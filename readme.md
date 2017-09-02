@@ -1,5 +1,5 @@
 
-# hyperapp-to-html
+# hyperapp-stringify
 
 Convert that object created with hyperapp `h` into an HTML string.
 
@@ -12,7 +12,7 @@ It has a regex for CSS style vendor prefixes.
 
 var assert = require('assert')
 var h = require('hyperapp').h
-var hyperappToHtml = require('./index')
+var hyperappStringify = require('./index')
 
 // example state that is rendered in `view` function
 var state = {
@@ -62,7 +62,7 @@ function view(state, actions) {
 //
 // generate the html with state and actions
 //
-outputHtml = hyperappToHtml(view(state, actions))
+outputHtml = hyperappStringify(view(state, actions))
 
 console.log('\nexpected html:\n\n', expectedHtml, '\n')
 console.log('output html:\n\n', outputHtml, '\n')

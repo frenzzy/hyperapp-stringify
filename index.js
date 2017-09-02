@@ -32,7 +32,7 @@ function stringifyStyle(style) {
  * @param {object} vnode object or string
  * @return {string} html representation of the input
  */
-function hyperappToHtml(vnode) {
+function hyperappStringify(vnode) {
   var tag
   var data
   var children
@@ -88,7 +88,7 @@ function hyperappToHtml(vnode) {
 
   // Get the child nodes of the current vnode
   for (i = 0; i < childrenLen; i += 1) {
-    childHTML += hyperappToHtml(children[i])
+    childHTML += hyperappStringify(children[i])
   }
 
   if (selfClosingTags.indexOf(tag) > -1 && childHTML === '') {
@@ -100,4 +100,4 @@ function hyperappToHtml(vnode) {
   return '<' + tag + attrs + '>' + childHTML + '</' + tag + '>'
 }
 
-module.exports = hyperappToHtml
+module.exports = hyperappStringify
