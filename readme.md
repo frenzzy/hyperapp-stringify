@@ -6,7 +6,7 @@ Convert that object created with hyperapp `h` into an HTML string.
 ```js
 var hyperappStringify = require('hyperapp-stringify')
 var h = require('hyperapp').h
-let vnode = h('div', {style: {display: 'inline-block', border: '1px solid red'}}, 'hi')
+var vnode = h('div', {style: {display: 'inline-block', border: '1px solid red'}}, 'hi')
 hyperappStringify(vnode)
 ```
 
