@@ -12,7 +12,7 @@ hyperappStringify(vnode)
 
 Output
 ```html
-'<div style="display:inline-block;border:1px solid red;">hi</div>'
+<div style="display:inline-block;border:1px solid red;">hi</div>
 ```
 
 Example from `./test.js` uses `h` function but you can use JSX in yours.
