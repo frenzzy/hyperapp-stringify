@@ -1,7 +1,9 @@
 
 # hyperapp-stringify
 
-Convert that object created with hyperapp `h` into an HTML string.
+Convert the object created with hyperapp `h` into an HTML string.
+
+Also works with [picodom](/picodom/picodom).
 
 ```js
 var hyperappStringify = require('hyperapp-stringify')
